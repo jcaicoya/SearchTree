@@ -9,21 +9,23 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Edge.cpp \
+    EdgeItem.cpp \
     MainWindow.cpp \
-    Node.cpp \
+    NodeItem.cpp \
     OperationWidget.cpp \
     SearchTreeView.cpp \
     SearchTreeWidget.cpp \
+    Tree.cpp \
     main.cpp
 
 HEADERS += \
-    Edge.h \
+    EdgeItem.h \
     MainWindow.h \
-    Node.h \
+    NodeItem.h \
     OperationWidget.h \
     SearchTreeView.h \
-    SearchTreeWidget.h
+    SearchTreeWidget.h \
+    Tree.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
